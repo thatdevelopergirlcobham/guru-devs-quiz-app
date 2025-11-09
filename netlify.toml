@@ -1,0 +1,15 @@
+[build]
+  # The directory where your built app lives
+  publish = "dist"
+
+  # The command to build your React app (Vite)
+  command = "npm run build"
+
+  # Optional: Set environment variables (you can also set in Netlify UI)
+  # environment = { NODE_VERSION = "18" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
